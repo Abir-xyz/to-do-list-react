@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif !important;
+  background-color: hsl(210, 36%, 96%);
+}
+
+:root {
+  --themeClr: #ffe6a7;
+  --whiteClr: #ebebeb;
+  --darkYlw: #ffb703;
+  --bgWhite: #f8f9fa;
+}
+
+/* ------------------------------------------ main */
+
+.main {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 650px;
+  margin: 0 auto;
+  background-color: var(--themeClr);
+  /* padding: 50px 10px; */
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  min-height: 221px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header-wrapper {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.header-wrapper h1 {
+  font-size: 2rem;
+}
+
+.input-wrapper {
+  text-align: center;
+  max-width: 570px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.input {
+  width: 490px;
+  padding: 8px 15px;
+  border: 1px solid;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  margin-right: 3px;
+  background-color: var(--bgWhite);
+}
+
+.submit-btn {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background-color: #fb8500;
+  color: var(--whiteClr);
+  padding: 9px 20px;
+  border-radius: 3px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #bd8907;
+}
+
+.lists {
+  max-width: 570px;
+  text-align: left;
+  margin: 0 auto;
+  margin-top: 2rem !important;
+}
+
+.list-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+  /* background-color: var(--bgWhite); */
+  padding: 8px 10px;
+  border-radius: 3px;
+  color: #000;
+}
+
+.list {
+  width: 90%;
+  text-align: left;
+}
+
+.list h3 {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.edit-btn {
+  color: green;
+  cursor: pointer;
+}
+
+.del-btn {
+  margin-left: 6px;
+  color: red;
+  cursor: pointer;
+}
+
+.clear-btn-wrapper {
+  text-align: center;
+}
+
+.clear-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  background-color: red;
+  color: #ebebeb;
+  padding: 4px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 500 !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.main-container {
+  min-height: 80px;
+}
+
+.alert-txt {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+}
+
+.alert-wrapper {
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+.green {
+  color: rgb(27, 165, 27);
+}
+
+.red {
+  color: red;
+}
+
+/* --------------------------------------------- responsive */
+
+@media screen and (max-width: 700px) {
+  .container {
+    max-width: 500px;
+  }
+  .input {
+    /* max-width: 330px; */
+  }
+  .lists {
+    /* max-width: 410px; */
+  }
+  .list {
+    max-width: 85%;
+  }
+}
